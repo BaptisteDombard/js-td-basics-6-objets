@@ -15,13 +15,13 @@ Voici la représentation JavaScript d'un stylo à bille Bic qui écrit en bleu.
 
 // Déclaration littérale d'un objet
 
-const stylo = {
+/*const stylo = {
   type: "bille",
   couleur: "bleu",
   marque: "Bic"
-};
+};*/
 
-var monSmartPhone = {
+let monSmartPhone = {
 	modele: 'XS Max',
 	marque: 'Apple',
 	memoire: 512,
@@ -51,11 +51,11 @@ OBJET
 */
 
 /* Une PROPRIÉTÉ est une VARIABLE associée à un objet */
-const stylo = {
+/*const stylo = {
   type: "bille",
   couleur: "bleu",
   marque: "Bic"
-};
+};*/
 /* par exemple, couleur est un proriété de stylo :
 c'est en fait une variable (couleur) qui contient une valeur (bleu)
 représentant une proriété de mon objet stylo */
@@ -65,7 +65,7 @@ représentant une proriété de mon objet stylo */
 // 1. Initialiser un nouvel objet
 
 // 1°) Première méthode d'initialisation : déclaration littérale
-var john = {
+let john = {
     firstName: 'John',
     lastName: 'Smith',
     birthYear: 1990,
@@ -81,8 +81,14 @@ EXERCICE 1 :
 - Affiche l'objet que tu viesn de créer dasn la console
 */
 
-
-
+let moi = {
+    nom: "Dombard",
+    prenom: "Baptiste",
+    age: 18,
+    profession: "étudiant",
+    nationalite: "belge"
+}
+// console.log(moi);
 
 
 
@@ -106,7 +112,7 @@ console.log(john.firstName);
 
 /* N.B. Si on a stocké le nom de la propriété dans une varaible,
 		on doit utiliser la syntaxe à crochets */
-var x = 'birthYear';
+let x = 'birthYear';
 console.log(john[x]);
 console.log(john.x) ; // ceci ne fonctionnera pas car john n'a pas de propriété x
 
@@ -116,7 +122,7 @@ EXERCICE 2 :
 	en allant à chaque fois rechercher les propriétés dans l'ojet 'moi' que tu viens de créer
 */
 
-
+console.log(`Je m'appelle ${moi.nom} ${moi.prenom}, j'ai ${moi.age} ans, je suis ${moi.profession} et je suis ${moi.nationalite}.`)
 
 
 
@@ -146,8 +152,11 @@ EXERCICE 3 :
 	en allant à chaque fois rechercher les propriétés dans l'objet 'moi' que tu viens de créer
 */
 
-
-
+moi.age = 21;
+moi.profession = "Web Developer";
+moi.statut = "marié";
+console.log(moi);
+console.log(`Je m'appelle ${moi.nom} ${moi.prenom}, j'ai  ${moi.age} ans, je suis à présent un … (métier) … (nationalité) et je suis … (état civil)`)
 
 
 
@@ -167,7 +176,13 @@ EXERCICE 4 :
 - Affiche "Mon stylo coûte … euros"
 */
 
-
+let stylo = {
+    type: "bille",
+    couleur: "bleu",
+    marque: "bic"
+}
+console.log(stylo);
+console.log(`J'écris avec un stylo ${stylo.type} ${stylo.couleur} de marque ${stylo.marque}`);
 
 
 
@@ -184,7 +199,7 @@ EXERCICE 4 :
 // 1. Initialiser un nouvel objet (… petit retour en arrière pour compléter…)
 
 // 2°) Deuxième méthode d'initialisation : la syntaxe new Object()
-var jane = new Object();
+let jane = new Object();
 jane.firstName = 'Jane';
 jane.birthYear = 1969;
 jane['lastName'] = 'Smith';
