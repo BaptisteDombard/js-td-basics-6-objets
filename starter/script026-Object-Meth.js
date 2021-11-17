@@ -11,25 +11,27 @@ const aurora = {
 };
 
 // Affiche "… a … points de vie et … en force"
-
+// console.log(`${aurora.nom} a ${aurora.sante} points de vie et ${aurora.force} en force`)
 
 // Crée une fonction décrire qui prend personnage en paramètre et renvoie la description du personnage
 
-
+function decrire(personnage) {
+    return personnage;
+}
 
 
 // Utilise cette fonction pour afficher la description d'Aurora
-
+console.log(decrire(aurora));
 
 // Ajoute à présent cette fonction à l'intérieur de l'objet aurora
 // => félicitations, tu viens d'ajouter une **méthode** à l'objet Aurora !
-const aurora = {
+/*const aurora = {
   nom: "Aurora",
   sante: 150,
   force: 25,
   // renvoie la description du personnage
   // écris ton code ici
-};
+ };*/
 /*
 Un nouveau mot est apparu : le mot-clé 'this'.
 **`this`** représente l'objet courant, l'objet auquel la méthode appartient.
@@ -42,7 +44,8 @@ Un nouveau mot est apparu : le mot-clé 'this'.
 EXERCICE 1 : Ajoute une méthode calcAge à john qui calcule son age
 (en soustrayant sa date de naissance de 2019), le retorune et le stocke dans une propriété age.
 */
-var john = {
+/*
+let john = {
     firstName: 'John',
     lastName: 'Smith',
     birthYear: 1992,
@@ -55,6 +58,7 @@ var john = {
 };
 console.log(john);
 console.log(john.calcAge());
+*/
 
 
 
