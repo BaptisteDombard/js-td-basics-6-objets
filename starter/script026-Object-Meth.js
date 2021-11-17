@@ -31,10 +31,9 @@ const aurora = {
   force: 25,
   // renvoie la description du personnage
   // écris ton code ici
-  description: function decrire(personnage) {
-      return personnage;
+  decrire: function() {
+      return this.description = aurora.nom + aurora.sante + aurora.force;
   },
-
 };
 /*
 Un nouveau mot est apparu : le mot-clé 'this'.
@@ -42,7 +41,7 @@ Un nouveau mot est apparu : le mot-clé 'this'.
  */
 // Utilise à présent cette méthode pour afficher la description d'Aurora
 
-
+console.log(aurora.decrire());
 
 /*
 EXERCICE 1 : Ajoute une méthode calcAge à john qui calcule son age
@@ -73,8 +72,14 @@ EXERCICE 2 :
 - Utilise cette méthode pour afficher sa surface dans la console
 */ 
 
-
-
+const rectangle = {
+    longueur: 5,
+    largeur: 3,
+    surface: function (){
+        return this.surfa = this.longueur * this.largeur;
+    }
+}
+console.log(rectangle.surface());
 
 
 /* **********************************

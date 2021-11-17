@@ -20,7 +20,9 @@ const mesFruits = {
   "Ananas": 3
 };
 
-
+for (const prop in mesFruits){
+  console.log(`Le fruit ${prop} coûte ${mesFruits[prop]}`)
+};
 
 
 
@@ -32,10 +34,12 @@ const fruit = {
   "Nom": "Pomme",
   "Prix": 0.3,
   "Couleur": "Verte",
-  "Variété": "Golden"
+  "Variete": "Golden"
 };
 
-
+for (const prop in fruit){
+  console.log(`${prop} : ${fruit[prop]}`);
+}
 
 
 
@@ -44,3 +48,6 @@ const fruit = {
 EXERCICE 3 : 
 Parcours le mot "Bonjour" pour afficher séparément chacune de ses lettres
 */
+for (const prop in "Bonjour"){
+  console.log("Bonjour"[prop]);
+}

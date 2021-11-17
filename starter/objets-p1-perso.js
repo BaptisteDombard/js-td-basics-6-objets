@@ -19,3 +19,24 @@ Aurora s'apprête à vivre une longue série d'aventures, dont certaines pourron
 11. réaffiche la description d'aurora
 */
 
+const aurora = {
+    nom: "Aurora",
+    sante: 150,
+    force: 25,
+    xp: 0,
+    decrire: function (){
+        return `${this.nom} a ${this.sante} points de vie, ${this.force} en force et ${this.xp} points d'expériences`
+    }
+}
+console.log(aurora.decrire());
+console.log("Aurora apprend une nouvelle compétences")
+
+aurora.xp += 15;
+console.log(aurora.decrire());
+console.log("Aurora est blessée par une flèche")
+
+aurora.sante -= 20;
+console.log("Aurora trouve un bracelet de force")
+
+aurora.force += 10;
+console.log(aurora.decrire());

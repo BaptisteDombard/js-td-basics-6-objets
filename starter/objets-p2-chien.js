@@ -9,7 +9,19 @@ Ecris un programme qui :
 3. affiche dans la console le message "Tiens, un chat ! … aboie : …"
 	(où … est le nom du chien et … utilise la méthode aboie du chien pour le faire aboyer)
 */
-
+const chien = {
+    nom: "Tobby",
+    race: "Border Collie",
+    couleur: "bleu merle tricolore",
+    grogner: function (){
+        return "Grrr ! Grr !"
+    },
+    aboyer: function (){
+        return "Wah ! Wah !"
+    }
+}
+console.log(`${chien.nom} est un ${chien.race} de couleur ${chien.couleur}`);
+console.log(`Tiens, un chat ! ${chien.nom} aboie : ${chien.aboyer()}`);
   
   
 
