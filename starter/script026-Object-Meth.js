@@ -4,11 +4,11 @@
 
 /* Une MÉTHODE est une fonction associée à un objet */
 
-const aurora = {
+/*const aurora = {
   nom: "Aurora",
   sante: 150,
   force: 25
-};
+};*/
 
 // Affiche "… a … points de vie et … en force"
 // console.log(`${aurora.nom} a ${aurora.sante} points de vie et ${aurora.force} en force`)
@@ -21,17 +21,21 @@ function decrire(personnage) {
 
 
 // Utilise cette fonction pour afficher la description d'Aurora
-console.log(decrire(aurora));
+/*console.log(decrire(aurora));*/
 
 // Ajoute à présent cette fonction à l'intérieur de l'objet aurora
 // => félicitations, tu viens d'ajouter une **méthode** à l'objet Aurora !
-/*const aurora = {
+const aurora = {
   nom: "Aurora",
   sante: 150,
   force: 25,
   // renvoie la description du personnage
   // écris ton code ici
- };*/
+  description: function decrire(personnage) {
+      return personnage;
+  },
+
+};
 /*
 Un nouveau mot est apparu : le mot-clé 'this'.
 **`this`** représente l'objet courant, l'objet auquel la méthode appartient.
